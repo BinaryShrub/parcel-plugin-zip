@@ -1,6 +1,5 @@
 const fs = require('fs')
 const path = require('path')
-var fsextra = require('fs-extra')
 const archiver = require('archiver')
 
 module.exports = bundler => {
