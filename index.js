@@ -24,14 +24,8 @@ module.exports = bundler => {
           archive.finalize()
         })
       }
-      async function removeDir() {
-        await zipFile()
-        fsextra.remove(dir, function (err) {
-          if (err) return console.error(err)
-          console.log("success!")
-        })
-      }
-      removeDir()
+      await zipFile()
+      console.log("success!")
     }
   })
 }
